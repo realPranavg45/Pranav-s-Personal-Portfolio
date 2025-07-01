@@ -419,28 +419,74 @@ main {
 
 .contact-info address { font-style: normal; }
 
+.social-list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0; /* Added vertical spacing */
+  flex-wrap: nowrap; /* Prevent wrapping to new line */
+}
+
+/* Social Items - Remove default margins */
+.social-item {
+  margin: 0;
+}
+
+/* LinkedIn and GitHub icon styles (keep your existing styles) */
 .highlight-linkedin .social-link {
-  background-color: #0077B5; /* LinkedIn blue */
+  background-color: #0077B5;
   color: white;
-  font-size: 28px; /* Bigger icon */
+  font-size: 28px;
   padding: 10px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 15px rgba(0, 119, 181, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
 }
 
-.highlight-linkedin .social-link:hover {
+.highlight-github .social-link {
+  background-color: #181717;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(24, 23, 23, 0.4);
+}
+
+/* Hover effects */
+.highlight-linkedin .social-link:hover,
+.highlight-github .social-link:hover {
   transform: scale(1.15);
-  box-shadow: 0 0 20px rgba(0, 119, 181, 0.6);
 }
 
-
-
-
+@media (max-width: 480px) {
+  .social-list {
+    gap: 10px; /* Reduce gap on small screens */
+    justify-content: center; /* Center icons on mobile */
+    margin: 15px 0; /* Adjust vertical spacing */
+  }
+  
+  /* Icon sizing for mobile */
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Specific icon adjustments */
+  ion-icon {
+    font-size: 20px; /* Ensure Ionicons match the container */
+  }
+}
 
 /*-----------------------------------*\
   #NAVBAR
@@ -853,42 +899,71 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+/* Card styling */
+.tech-card {
+  background: var(--border-gradient-onyx); /* Optional: Gradient background */
+  border: 1px solid var(--orange-yellow-crayola); /* Border color */
+  border-radius: 14px; /* Rounded corners */
+  padding: 24px; /* Inner spacing */
+  box-shadow: var(--shadow-2); /* Optional: Adds depth */
+  margin-top: 20px; /* Space above the card */
+}
 
-.skills-list { padding: 20px; }
+/* Title spacing */
+.section-title {
+  color: var(--white-2);
+  margin-bottom: 20px; /* Space below the title */
+  font-size: 1.5rem;
+}
 
-
-.skills-item:not(:last-child) { margin-bottom: 15px; }
-
-.skill .title-wrapper {
+/* List styling */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+  flex-direction: column;
+  gap: 12px; /* Space between list items */
 }
 
-.skill .title-wrapper data {
+.skills-list li {
   color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
+  font-size: 18px;
 }
 
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
+@media (max-width: 768px) {
+    .section-title {
+        color: #CEB15A !important; /* Force color on mobile */
+        margin-bottom: 20px;
+    }
+}
+.techstack {
+  margin-top: 25px;
 }
 
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
+.skills-list li {
+  font-size: 18px;
+  color: var(--light-gray);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-
-
+.skills-list li strong {
+  font-weight: 600;
+  color: var(--white-2);
+  min-width: 220px;
+  flex-shrink: 0;
+}
 
 .project-list {
   display: flex;
@@ -916,7 +991,7 @@ main {
 }
 
 .project-title {
-  color: var(--white-2);
+  color: #CEB15A;
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
   margin-bottom: 10px;
@@ -945,7 +1020,16 @@ main {
   border-radius: 10px;
 }
 
-
+@media (max-width: 768px) {
+  .skills-list li, .techstack-table .row {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .skills-list li strong, .techstack-table .label {
+    min-width: 100%;
+  }
+}
 
 /*-----------------------------------*\
   #BLOG
@@ -1461,33 +1545,48 @@ textarea.form-input {
 .form-btn ion-icon { 
   font-size: 18px; 
 }
+.techstack {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  margin-top: 40px; /* Less than 80px since Resume has different spacing */
+  box-sizing: border-box;
+}
 
 .skills-languages {
   max-width: 900px;
+  color: whitesmoke;
   width: 100%;
   background: var(--border-gradient-onyx);
   padding: 40px;
   border-radius: 16px;
   box-shadow: var(--shadow-2);
   text-align: left;
-  margin-top: 80px; /* Added to prevent navbar overlap */
-  z-index: 1; /* Ensure it stays above other elements */
   position: relative;
+  z-index: 1;
 }
 
-.skills-list,
-.languages-list {
+.section-title {
+  font-size: var(--fs-3); /* Slightly larger for emphasis */
+  font-weight: var(--fw-600);
+  color: var(--orange-yellow-crayola);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.skills-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 0;
+  color: aliceblue;
 }
 
-.skills-list li,
-.languages-list li {
+.skills-list li {
   font-size: 18px;
   color: var(--light-gray);
   line-height: 1.8;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   text-align: justify;
 }
 
@@ -1495,42 +1594,7 @@ textarea.form-input {
   color: var(--white-2);
   font-weight: 600;
   display: inline-block;
-  min-width: 200px;
-}
-
-.section-title {
-  font-size: var(--fs-4);
-  font-weight: var(--fw-600);
-  color: var(--orange-yellow-crayola);
-  margin-bottom: 15px;
-}
-
-/* Make contact form smaller */
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: var(--eerie-black-2);
-  margin-top: 100px;
-  padding: 60px;
-  border-radius: 12px;
-  box-shadow: var(--shadow-1);
-}
-.form-btn ion-icon {
-  transition: all 0.3s ease;
-}
-
-.form-btn[disabled] {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-.techstack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 60px 20px;
-  box-sizing: border-box;
-  margin-top: 80px; /* Added to prevent navbar overlap */
+  min-width: 220px;
 }
 
 /* Ensure navbar stays on top */

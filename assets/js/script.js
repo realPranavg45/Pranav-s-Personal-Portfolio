@@ -152,23 +152,24 @@ validateForm();
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+// Add event to all nav link
+navigationLinks.forEach(link => {
+  link.addEventListener("click", function () {
+    const targetPage = this.textContent.toLowerCase();
 
-    const selectedPage = this.innerHTML.toLowerCase();
-
-    for (let j = 0; j < pages.length; j++) {
-      if (selectedPage === pages[j].dataset.page) {
-        pages[j].classList.add("active");
-        navigationLinks[j].classList.add("active");
-        window.scrollTo(0, 0);
+    pages.forEach(page => {
+      if (page.dataset.page === targetPage) {
+        page.classList.add("active");
       } else {
-        pages[j].classList.remove("active");
-        navigationLinks[j].classList.remove("active");
+        page.classList.remove("active");
       }
-    }
+    });
 
+    navigationLinks.forEach(nav => nav.classList.remove("active"));
+    this.classList.add("active");
+
+    window.scrollTo(0, 0);
   });
+});
 
-}
+
