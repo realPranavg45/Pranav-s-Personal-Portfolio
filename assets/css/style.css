@@ -509,6 +509,22 @@ ion-icon {
   font-size: 20px;
 }
 
+.project-links {
+  margin-top: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-right: 12px;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
