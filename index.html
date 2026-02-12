@@ -1,581 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Personal Portfolio</title>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+      <title>Personal projects</title>
+      <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <body>
+          <main>
+                <aside class="sidebar" data-sidebar>
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+                              <div class="sidebar-info">
+                                    <figure class="avatar-box">
+                                      <img src="./assets/images/my-avatar.png" alt="Pranav Gaikwad" width="80">
+                                    </figure>
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+                                    <div class="info-content">
+                                      <h1 class="name" title="Pranav Gaikwad">Pranav Gaikwad</h1>
 
-<body>
+                                      <p class="title"> Python Developer with a Focus on Data Analytics</p>
+                                    </div>
 
-  <!--
-    - #MAIN
-  -->
+                                    <button class="info_more-btn" data-sidebar-btn>
+                                      <span>Show Contacts</span>
 
-  <main>
+                                      <ion-icon name="chevron-down"></ion-icon>
+                                    </button>
+                              </div>
 
-    <!--
-      - #SIDEBAR
-    -->
+                          <div class="sidebar-info_more">
 
-    <aside class="sidebar" data-sidebar>
+                              <div class="separator"></div>
 
-      <div class="sidebar-info">
+                                        <ul class="contacts-list">
+                          
+                                              <li class="contact-item">
+                                                <div class="icon-box">
+                                                  <ion-icon name="mail-outline"></ion-icon>
+                                                </div>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Pranav Gaikwad" width="80">
-        </figure>
+                                                <div class="contact-info">
+                                                  <p class="contact-title">Email</p>
+                                                  <a href="mailto:pranavgaikwad3001@gmail.com" class="contact-link">pranavz.work@gmail.com.com</a>
+                                                </div>
+                                              </li>
 
-        <div class="info-content">
-          <h1 class="name" title="Pranav Gaikwad">Pranav Gaikwad</h1>
+                                              <li class="contact-item">
+                                                <div class="icon-box">
+                                                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                                                </div>
 
-          <p class="title"> Python Developer</p>
-        </div>
+                                                <div class="contact-info">
+                                                  <p class="contact-title">Phone</p>
+                                                  <a href="tel:+919978785580" class="contact-link">+91 9978785580</a>
+                                                </div>
+                                              </li>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+                                              <li class="contact-item">
+                                                  <div class="icon-box">
+                                                    <ion-icon name="calendar-outline"></ion-icon>
+                                                  </div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+                                                  <div class="contact-info">
+                                                    <p class="contact-title">Birthday</p>
+                                                    <time datetime="1982-06-23">30 January, 2004</time>
+                                                  </div>
+                                              </li>
 
-      </div>
+                                              <li class="contact-item">
+                                                  <div class="icon-box">
+                                                    <ion-icon name="location-outline"></ion-icon>
+                                                  </div>
 
-      <div class="sidebar-info_more">
+                                                  <div class="contact-info">
+                                                    <p class="contact-title">Location</p>
 
-        <div class="separator"></div>
+                                                    <address>Vadodara, India</address>
+                                                  </div>
+                                              </li>
+                                        </ul>
+                              
+                                        <div class="separator"></div>
+                                            <ul class="social-list">
+                                                  <li class="social-item highlight-linkedin">
+                                                    <a href="https://www.linkedin.com/in/pranav-gaikwad-5bb143227/" class="social-link" target="_blank">
+                                                      <ion-icon name="logo-linkedin"></ion-icon>
+                                                    </a>
+                                                  </li>
 
-        <ul class="contacts-list">
+                                                  <li class="social-item highlight-github">
+                                                    <a href="https://github.com/realPranavg45" class="social-link" target="_blank">
+                                                      <ion-icon name="logo-github"></ion-icon>
+                                                    </a>
+                                                  </li>
+                                            </ul>
+                                        </div>
+                              </div>     
+                          </div>
+                </aside>
 
-          <li class="contact-item">
+            <div class="main-content">
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+                              <nav class="navbar">
+                                    <ul class="navbar-list">
+                                        <li class="navbar-item">
+                                          <button class="navbar-link  active" data-nav-link>About</button>
+                                        </li>
+
+                                        <li class="navbar-item">
+                                          <button class="navbar-link" data-nav-link>Resume</button>
+                                        </li>
+
+                                        <li class="navbar-item">
+                                          <button class="navbar-link" data-nav-link>Projects</button>
+                                        </li>
+                                    </ul>
+                              </nav>
+
+
+                      <article class="about  active" data-page="about">
+                            <header>
+                              <h2 class="h2 article-title">About me</h2>
+                            </header>
+                                <section class="about-text">
+                                    <p>
+                                      I am Pranav Gaikwad, a Computer Science graduate with hands-on experience across data analytics, backend development, 
+                                      enterprise applications, and applied AI/ML. My core strengths lie in Python, SQL, PL/SQL, and data visualization,
+                                       with growing exposure to enterprise systems and cloud-based ERP workflows.
+                                    </p>
+
+                                    <p>
+                                      Currently, I am working as an IFS Trainee at Tntra, where I have gained practical experience with PL/SQL concepts including procedures, 
+                                      functions, packages, and cursors. I have also completed a mini task using Java Spring Boot involving basic REST API implementation 
+                                      and have been exposed to the IFS Cloud environment, learning about application workflows and enterprise data handling.
+                                    </p>
+
+                                    <p>
+                                      Previously, I worked as a Project Trainee at SAC-ISRO, where I researched and implemented the Kyber-512 post-quantum cryptographic algorithm in Python. 
+                                      This involved analyzing key generation, encapsulation, and decapsulation processes, validating encryption and decryption workflows, and 
+                                      documenting algorithm-level observations for secure communication systems.
+                                    </p>
+
+                                    <p>
+                                      I also completed an AI/ML internship at ONGC, where I designed and deployed an AI-powered chatbot using NLP, NLTK, and machine learning, 
+                                      and integrated it into web applications using Flask and PHP for seamless interaction.
+                                    </p>
+
+                                    <p>
+                                      My skill set includes Python, SQL, Power BI, PL/SQL, Java, R, and JavaScript, along with experience in data cleaning, KPI analysis, 
+                                      forecasting, and visualization. I have worked with databases such as Oracle SQL, MySQL, and PostgreSQL, and have delivered projects 
+                                      including a Power BI sales dashboard, a post-quantum secure communication system, and an AI-powered chatbot.
+                                    </p>
+
+                                    <p>
+                                      I am a quick learner with strong analytical and problem-solving skills, motivated to apply data-driven insights, backend logic, and 
+                                      enterprise technologies to solve real-world problems and contribute meaningfully in analyst or technology-focused roles.
+                                    </p>
+                                </section>
+
+                                <section class="service">
+                                    <h3 class="h3 service-title">What I'm Doing</h3>
+                                    <ul class="service-list">
+                                            <li class="service-item">
+                                                <div class="service-icon-box">
+                                                  <img src="./assets/images/icon-dev.svg" alt="Python development icon" width="40">
+                                                </div>
+                                                <div class="service-content-box">
+                                                  <h4 class="h4 service-item-title">Python Development</h4>
+                                                  <p class="service-item-text">
+                                                    Developing robust, efficient, and real-world Python applications.
+                                                    My work includes automation scripts, backend systems, and integration with AI/ML models.
+                                                    I aim to write clean, maintainable code and build solutions that are optimized, secure, and ready for production.
+                                                  </p>
+                                                </div>
+                                            </li>
+
+                                            <li class="service-item">
+                                                <div class="service-icon-box">
+                                                  <img src="./assets/images/icon-analytics.svg" alt="Data analytics icon" width="40">
+                                                </div>
+                                                <div class="service-content-box">
+                                                  <h4 class="h4 service-item-title">Data Analysis & Visualization</h4>
+                                                  <p class="service-item-text">
+                                                    Transforming raw data into meaningful insights through data cleaning, transformation, and visual storytelling. 
+                                                    Skilled in Power BI and Python-based analysis, I create dynamic dashboards and reports that reveal trends, patterns, and actionable metrics for informed decision-making.
+                                                  </p>
+                                                </div>
+                                          </li>
+                                    </ul>
+                              </section>
+                      </article>
+
+                      <!--
+                        - #RESUME
+                      -->
+
+                      <article class="resume" data-page="resume">
+                              <header>
+                                <h2 class="h2 article-title">Resume</h2>
+                              </header>
+
+                              <section class="timeline">
+
+                                      <div class="title-wrapper">
+                                        <div class="icon-box">
+                                          <ion-icon name="book-outline"></ion-icon>
+                                        </div>
+
+                                        <h3 class="h3">Education</h3>
+                                      </div>
+
+                                    <ol class="timeline-list">
+                                        <li class="timeline-item">
+                                            <h4 class="h4 timeline-item-title">GSFC University, Vadodara </h4>
+                                            <span>2021 — 2025</span>
+                                            <p class="timeline-text">
+                                              B.Tech Computer Science & Engineering
+                                            </p>
+                                            <p class="timeline-text highlight">CGPA – 8.11</p>
+                                        </li>
+                                    </ol>
+
+                              </section>
+
+                              <section class="timeline">
+                              
+                                                <div class="title-wrapper">
+                                                  <div class="icon-box">
+                                                    <ion-icon name="book-outline"></ion-icon>
+                                                  </div>
+
+                                                  <h3 class="h3">Internship</h3>
+                                                </div>
+
+                                                <ol class="timeline-list">
+                                                        <li class="timeline-item">
+                                                                <h4 class="h4 timeline-item-title">Trainee at Tntra </h4>
+                                                                <span> September 2025- Present</span>
+                                                                <p class="timeline-text">
+                                                                  IFS Cloud Trainee with foundational knowledge of LU APIs, OData integrations, and IFS Connect. Currently learning to design validation logic, transactional flows, and integration configurations following IFS best practices.
+                                                                </p>
+                                                        </li>
+                                                        <li class="timeline-item">
+                                                                <h4 class="h4 timeline-item-title">Full-Stack Python Developer at Acecom</h4>
+                                                                <span>July 2025 – August 2025</span>
+                                                                <p class="timeline-text">
+                                                                  Developed and integrated multiple backend modules used in production-level project workflows. 
+                                                                  Implemented complex business logic and data processing functions using Python, designed and optimized 
+                                                                  database schemas with PostgreSQL, and built interactive data-driven interfaces using Streamlit. 
+                                                                  Collaborated on REST API development and integration to enable seamless communication between frontend 
+                                                                  components and backend services.
+                                                                </p>
+                                                        </li>
+                                                        <li class="timeline-item">
+                                                                <h4 class="h4 timeline-item-title">Project Trainee at SAC, ISRO </h4>
+                                                                <span> January 2025- June 2025</span>
+                                                                <p class="timeline-text">
+                                                                  Designed and implemented a Post-Quantum Secure Communication System using
+                                                                  the Kyber algorithm for quantum-resistant key exchange in chat and file transfer and
+                                                                  developed a custom AES-CBC encryption module in pure Python to secure data
+                                                                  transmission without external cryptographic libraries.
+                                                                </p>
+                                                        </li>
+                                                        <li class="timeline-item">
+                                                                <h4 class="h4 timeline-item-title">Intern at Sannibh Technologies</h4>
+
+                                                                <span>December 2024-January 2025</span>
+
+                                                                <p class="timeline-text">
+                                                                  Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web apps by utilized Burp Suite, Nmap and Wireshark to identify and mitigate threats.
+                                                                </p>
+                                                        </li>
+                                                        <li class="timeline-item">
+                                                                <h4 class="h4 timeline-item-title">Python Intern at ONGC</h4>
+
+                                                                <span>June 2024 — July 2024</span>
+
+                                                                <p class="timeline-text">
+                                                                  Designed and deployed a conversational chatbot using NLTK, scikit-learn, and NLP techniques and integrated chatbot into existing internal portals using Flask and PHP, improving
+                                                                  query handling efficiency by 30%.
+                                                                </p>
+                                                        </li>
+                                                        <li class="timeline-item">
+                                                                <h4 class="h4 timeline-item-title">Intern at Arth Technologies</h4>
+                                                                <span>January 2023 - March 2023</span> <!-- Adjust dates as needed -->
+                                                                <p class="timeline-text">
+                                                                  Developed a full-featured Music Player application using Android Studio, implementing audio playback, playlist management, and user interface components. Gained hands-on experience with Android SDK, MediaPlayer API, and background service operations.
+                                                                </p>
+                                                        </li>
+                                                </ol>
+                              </section>
+
+                              <section class="certifications">
+                                    <div class="title-wrapper">
+                                        <div class="icon-box">
+                                            <ion-icon name="ribbon-outline"></ion-icon>
+                                          </div>
+                                          <h3 class="h3">Certifications</h3>
+                                        </div>
+
+                                        <div class="certifications-list">
+                                          <div class="certification-card">
+                                            <h4 class="cert-title">Deloitte Australia – Data Analytics Job Simulation</h4>
+                                            <p class="cert-provider">Forage Platform</p>
+                                        </div>
+
+                                        <div class="certification-card">
+                                            <h4 class="cert-title">Tata – Data Visualisation: Empowering Business With Effective Insights</h4>
+                                            <p class="cert-provider">Forage Platform</p>
+                                        </div>
+
+                                        <div class="certification-card">
+                                            <h4 class="cert-title">Ethical Hacker Certification</h4>
+                                            <p class="cert-provider">Cisco Networking Academy</p>
+                                        </div>
+
+                                        <div class="certification-card">
+                                            <h4 class="cert-title">Introduction To Cybersecurity</h4>
+                                            <p class="cert-provider">Cisco Networking Academy</p>
+                                        </div>
+
+                                        <div class="certification-card">
+                                            <h4 class="cert-title">Privacy And Security In Online Social Media</h4>
+                                            <p class="cert-provider">NPTEL</p>
+                                        </div>
+
+                                    </div>
+                              </section>
+
+                              <section class="techstack">
+                                    <h3 class="section-title">Technology Stack</h3>
+                                    <div class="tech-card">
+                                        <ul class="skills-list">
+                                          <li>
+                                            <strong>Programming Languages:</strong>
+                                            Python, Java, C, C++, SQL, PL/SQL
+                                          </li>
+                                          <li>
+                                            <strong>Backend & APIs:</strong>
+                                            Python, Flask, REST APIs
+                                          </li>
+                                          <li>
+                                            <strong>Data Analytics & Business Intelligence:</strong>
+                                            Power BI, Data Cleaning, Data Visualization, KPI Analysis, Forecasting
+                                          </li>
+                                          <li>
+                                            <strong>Databases:</strong>
+                                            Oracle SQL, MySQL, PostgreSQL, SQLite
+                                          </li>
+                                        </ul>
+                                    </div>
+                              </section>
+                
+                      </article>
+
+                    <!-- #projects -->
+                <article class="projects" data-page="projects">
+
+                            <header>
+                              <h2 class="h2 article-title">Projects</h2>
+                            </header>
+
+                            <section class="projects">
+
+                                    <div class="project-list">
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">Super Store Sales Dashboard | Data Analysis Project</h3>
+                                              <p class="project-description">
+                                                Designed and developed an interactive sales analytics dashboard to analyze Super Store performance across regions, categories, and customer segments. 
+                                                Performed data cleaning, transformation, and exploratory analysis to identify key sales trends, profit drivers, and loss-making areas, enabling data-driven business decisions.
+                                              </p>
+                                              <p class="project-tools">
+                                                <strong>Tools and Technologies:</strong><br>
+                                                Power BI, Python, Data Cleaning, Data Visualization
+                                              </p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">Post-Quantum Secure Communication System</h3>
+                                              <p class="project-description">
+                                                Developed a secure peer-to-peer chat and file transfer system using the Kyber algorithm for post-quantum key exchange. Implemented custom AES-CBC encryption in Python, along with a dynamic key management system.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Kyber, AES-CBC, Socket</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">AI-Powered RCC Chatbot</h3>
+                                              <p class="project-description">
+                                                Built a context-aware chatbot using Natural Language Processing and Machine Learning. Integrated with a Flask backend and a custom front-end for seamless interactions.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Flask, NLTK, ML</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">University LMS Integration Tool</h3>
+                                              <p class="project-description">
+                                                Developed a backend system for LMS with modules like transcription, summarization, and multilingual question generation to streamline academic content delivery using AI.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Flask, Google APIs, AI/NLP Models</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">Netflix Data Analysis Dashboard</h3>
+                                              <p class="project-description">
+                                                Designed and developed a dynamic Power BI dashboard to analyze Netflix's content trends. Performed data cleaning, preprocessing, feature extraction, and created insightful visualizations to uncover content distribution, genre popularity, and release patterns.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>Power BI, Data Profiling, Visualization, Trend Analysis</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">SplitPal – Expense Sharing App</h3>
+                                              <p class="project-description">
+                                                Created an Android app for splitting bills, managing group expenses, and tracking debts. Focused on core logic and backend calculations using Android Studio.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>Android Studio, Java, SQLite</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">Delimiter Checking Using C++</h3>
+                                              <p class="project-description">
+                                                Developed a program to validate code syntax by checking proper delimiter matching (parentheses, brackets, braces) in source files. Implemented using stack data structure for efficient validation.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>C++, Data Structures, File Handling</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">Music Player App</h3>
+                                              <p class="project-description">
+                                                Created an Android music player application with playlist management, audio visualization, and background playback functionality. Implemented media controls and audio focus handling.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>Android Studio, Java, MediaPlayer API</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">Athlete Training Analytics System</h3>
+                                              <p class="project-description">
+                                                Designed an AI/ML-powered software to measure training intensity and efficiency for athletes. The system analyzes performance metrics and provides personalized feedback to optimize training regimens.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Machine Learning, Pandas, NumPy, Data Visualization</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">Kyber Crypto Debugger</h3>
+                                              <p class="project-description">
+                                                Developed an AI-powered analysis tool for post-quantum cryptographic implementations, specializing in the Kyber algorithm. The system identifies vulnerabilities, optimizes parameter selection, and provides visual debugging of lattice-based operations.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Quantum-resistant Cryptography, Machine Learning, Lattice-based Algorithms, Matplotlib</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">Online Customer Retail Data Analysis</h3>
+                                              <p class="project-description">
+                                                Built an interactive Power BI dashboard to analyze customer purchasing behavior and retail trends using the Online Retail dataset. Focused on identifying top-selling products, key customer segments, and revenue patterns across regions.
+                                              </p>
+                                              <p class="project-tools"><strong>Tools and Technologies:</strong><br>Power BI, Data Cleaning, Data Modeling, Trend Analysis, Visualization</p>
+                                            </div>
+
+                                            <div class="project-card">
+                                              <h3 class="project-title">Kyber Key Generation Visualizer</h3>
+                                              <p class="project-description">
+                                                Built an interactive educational tool to visualize Kyber's post-quantum key generation process, combining a research phase in SAC,ISRO that analyzed NIST PQC finalist algorithms using Python and AES benchmarks, a production-ready responsive dashboard developed with React.js, and real-time cryptographic operations powered by a Kyber implementation.
+                                              </p>
+                                              <p class="project-tools">
+                                                <strong>Research:</strong> Python, AES, Jupyter Notebook<br>
+                                                <strong>Development:</strong> Bolt.AI<br>
+                                                <strong>Crypto:</strong> Kyber-512/768, WebCrypto API
+                                              </p>
+                                            </div>
+                                    </div>
+
+                            </section>
+                </article>
+
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:pranavgaikwad3001@gmail.com" class="contact-link">pranavz.work@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919978785580" class="contact-link">+91 9978785580</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">30 January, 2004</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Vadodara, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item highlight-linkedin">
-            <a href="https://www.linkedin.com/in/pranav-gaikwad-5bb143227/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item highlight-github">
-            <a href="https://github.com/realPranavg45" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-  I’m Pranav Gaikwad, a Computer Science graduate from GSFC University, passionate about building secure, scalable, and impactful digital solutions.
-  While my primary focus is on Python development, I have expanded my expertise into data analysis and business analysis, with growing exposure to enterprise applications.
-  I’ve worked across domains such as web development, mobile app development, AI/ML, and data visualization, continuously strengthening my problem-solving and analytical skills.
-</p>
-
-<p>
-  With hands-on experience in Python, Power BI, SQL, Node.js, HTML, CSS, and Android Studio, I enjoy transforming raw data into meaningful insights and writing clean, efficient code that brings real ideas to life.
-  Currently, I am undergoing training at Tntra, where I am learning and gaining practical exposure to IFS Cloud, including concepts such as Logical Units (LU), LU APIs, OData integrations, and IFS Connect.
-  This experience is helping me understand enterprise business flows, validation logic, transactional behavior, and integration best practices.
-</p>
-
-<p>
-  I’ve interned at esteemed organizations like ISRO-SAC, ONGC, and Sannibh Technologies, gaining valuable exposure to real-world systems, analytical workflows, and secure software practices.
-  I’m highly curious, quick to learn, and passionate about leveraging data and enterprise technologies to solve complex problems.
-  Whether it’s backend logic, interactive dashboards, or learning how large-scale ERP systems operate, I thrive on crafting solutions that deliver real value.
-</p>
-
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-  <h3 class="h3 service-title">What I'm Doing</h3>
-
-  <ul class="service-list">
-
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./assets/images/icon-dev.svg" alt="Python development icon" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Python Development</h4>
-        <p class="service-item-text">
-          Developing robust, efficient, and real-world Python applications.
-          My work includes automation scripts, backend systems, and integration with AI/ML models.
-          I aim to write clean, maintainable code and build solutions that are optimized, secure, and ready for production.
-        </p>
-      </div>
-    </li>
-
-        <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./assets/images/icon-analytics.svg" alt="Data analytics icon" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Data Analysis & Visualization</h4>
-        <p class="service-item-text">
-          Transforming raw data into meaningful insights through data cleaning, transformation, and visual storytelling. 
-          Skilled in Power BI and Python-based analysis, I create dynamic dashboards and reports that reveal trends, patterns, and actionable metrics for informed decision-making.
-        </p>
-      </div>
-    </li>
-
-    
-  </ul>
-
-</section>
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">GSFC University, Vadodara </h4>
-
-              <span>2021 — 2025</span>
-
-              <p class="timeline-text">
-                B.Tech Computer Science & Engineering
-              </p>
-              <p class="timeline-text highlight">CGPA – 8.11</p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Internship</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Trainee at Tntra </h4>
-
-              <span> September 2025- Present</span>
-
-              <p class="timeline-text">
-                IFS Cloud Trainee with foundational knowledge of LU APIs, OData integrations, and IFS Connect. Currently learning to design validation logic, transactional flows, and integration configurations following IFS best practices.
-              </p>
-
-            </li>
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Project Trainee at SAC, ISRO </h4>
-
-              <span> January 2025- June 2025</span>
-
-              <p class="timeline-text">
-                 Designed and implemented a Post-Quantum Secure Communication System using
-                the Kyber algorithm for quantum-resistant key exchange in chat and file transfer and
-                developed a custom AES-CBC encryption module in pure Python to secure data
-                transmission without external cryptographic libraries.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Intern at Sannibh Technologies</h4>
-
-              <span>December 2024-January 2025</span>
-
-              <p class="timeline-text">
-                Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web apps by utilized Burp Suite, Nmap and Wireshark to identify and mitigate threats.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Python Intern at ONGC</h4>
-
-              <span>June 2024 — July 2024</span>
-
-              <p class="timeline-text">
-                Designed and deployed a conversational chatbot using NLTK, scikit-learn, and NLP techniques and integrated chatbot into existing internal portals using Flask and PHP, improving
- query handling efficiency by 30%.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-  <h4 class="h4 timeline-item-title">Intern at Arth Technologies</h4>
-  <span>January 2023 - March 2023</span> <!-- Adjust dates as needed -->
-  <p class="timeline-text">
-    Developed a full-featured Music Player application using Android Studio, implementing audio playback, playlist management, and user interface components. Gained hands-on experience with Android SDK, MediaPlayer API, and background service operations.
-  </p>
-</li>
-
-          </ol>
-
-        <section class="certifications">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="ribbon-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Certifications</h3>
-          </div>
-
-          <div class="certifications-list">
-            <div class="certification-card">
-              <h4 class="cert-title">Deloitte Australia – Data Analytics Job Simulation</h4>
-              <p class="cert-provider">Forage Platform</p>
-            </div>
-
-            <div class="certification-card">
-              <h4 class="cert-title">Tata – Data Visualisation: Empowering Business With Effective Insights</h4>
-              <p class="cert-provider">Forage Platform</p>
-            </div>
-
-            <div class="certification-card">
-              <h4 class="cert-title">Ethical Hacker Certification</h4>
-              <p class="cert-provider">Cisco Networking Academy</p>
-            </div>
-
-            <div class="certification-card">
-              <h4 class="cert-title">Introduction To Cybersecurity</h4>
-              <p class="cert-provider">Cisco Networking Academy</p>
-            </div>
-
-            <div class="certification-card">
-              <h4 class="cert-title">Privacy And Security In Online Social Media</h4>
-              <p class="cert-provider">NPTEL</p>
-            </div>
-
-            <div class="certification-card">
-              <h4 class="cert-title">IFS Cloud - Lifecycle Experience - Introduction to Cloud Build Place</h4>
-              <p class="cert-provider">IFS Academy</p>
-            </div>
-
-            <div class="certification-card">
-              <h4 class="cert-title">Getting Started with IFS</h4>
-              <p class="cert-provider">IFS Academy</p>
-            </div>
-
-            <div class="certification-card">
-              <h4 class="cert-title">IFS Applications	10 Essentials</h4>
-              <p class="cert-provider">IFS Academy</p>
-            </div>
-
-            <div class="certification-card">
-              <h4 class="cert-title">Scope Tool Essentials</h4>
-              <p class="cert-provider">IFS Academy</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="techstack">
-          <h3 class="section-title">Technology Stack</h3>
-
-          <div class="tech-card">
-            <ul class="skills-list">
-              <li>
-                <strong>Programming Languages</strong>
-                Python, Java, C/C++, SQL, PL/SQL
-              </li>
-              <li>
-                <strong>Web Technologies</strong>
-                HTML, CSS, JavaScript, Bootstrap, Flask
-              </li>
-              <li>
-                <strong>Data Analytics & BI</strong>
-                Power BI, Data Visualization, Trend Analysis
-              </li>
-              <li>
-                <strong>Cybersecurity Tools</strong>
-                Nmap, Burp Suite, Wireshark
-              </li>
-              <li>
-                <strong>Development Tools</strong>
-                Android Studio, Git, SQLite
-              </li>
-              <li>
-                <strong>Operating Systems</strong>
-                Windows, Linux
-              </li>
-            </ul>
-          </div>
-        </section>
-       
-
-      </article>
-
-     <!-- #PORTFOLIO -->
-<article class="portfolio" data-page="portfolio">
-
-  <header>
-    <h2 class="h2 article-title">Projects</h2>
-  </header>
-
-  <section class="projects">
-
-    <div class="project-list">
-      <div class="project-card">
-        <h3 class="project-title">Post-Quantum Secure Communication System</h3>
-        <p class="project-description">
-          Developed a secure peer-to-peer chat and file transfer system using the Kyber algorithm for post-quantum key exchange. Implemented custom AES-CBC encryption in Python, along with a dynamic key management system.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Kyber, AES-CBC, Socket</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">AI-Powered RCC Chatbot</h3>
-        <p class="project-description">
-          Built a context-aware chatbot using Natural Language Processing and Machine Learning. Integrated with a Flask backend and a custom front-end for seamless interactions.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Flask, NLTK, ML</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">University LMS Integration Tool</h3>
-        <p class="project-description">
-          Developed a backend system for LMS with modules like transcription, summarization, and multilingual question generation to streamline academic content delivery using AI.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Flask, Google APIs, AI/NLP Models</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">Netflix Data Analysis Dashboard</h3>
-        <p class="project-description">
-          Designed and developed a dynamic Power BI dashboard to analyze Netflix's content trends. Performed data cleaning, preprocessing, feature extraction, and created insightful visualizations to uncover content distribution, genre popularity, and release patterns.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>Power BI, Data Profiling, Visualization, Trend Analysis</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">SplitPal – Expense Sharing App</h3>
-        <p class="project-description">
-          Created an Android app for splitting bills, managing group expenses, and tracking debts. Focused on core logic and backend calculations using Android Studio.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>Android Studio, Java, SQLite</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">Delimiter Checking Using C++</h3>
-        <p class="project-description">
-          Developed a program to validate code syntax by checking proper delimiter matching (parentheses, brackets, braces) in source files. Implemented using stack data structure for efficient validation.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>C++, Data Structures, File Handling</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">Music Player App</h3>
-        <p class="project-description">
-          Created an Android music player application with playlist management, audio visualization, and background playback functionality. Implemented media controls and audio focus handling.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>Android Studio, Java, MediaPlayer API</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">Athlete Training Analytics System</h3>
-        <p class="project-description">
-          Designed an AI/ML-powered software to measure training intensity and efficiency for athletes. The system analyzes performance metrics and provides personalized feedback to optimize training regimens.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Machine Learning, Pandas, NumPy, Data Visualization</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">Kyber Crypto Debugger</h3>
-        <p class="project-description">
-          Developed an AI-powered analysis tool for post-quantum cryptographic implementations, specializing in the Kyber algorithm. The system identifies vulnerabilities, optimizes parameter selection, and provides visual debugging of lattice-based operations.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Quantum-resistant Cryptography, Machine Learning, Lattice-based Algorithms, Matplotlib</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">Online Customer Retail Data Analysis</h3>
-        <p class="project-description">
-          Built an interactive Power BI dashboard to analyze customer purchasing behavior and retail trends using the Online Retail dataset. Focused on identifying top-selling products, key customer segments, and revenue patterns across regions.
-        </p>
-        <p class="project-tools"><strong>Tools and Technologies:</strong><br>Power BI, Data Cleaning, Data Modeling, Trend Analysis, Visualization</p>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">Kyber Key Generation Visualizer</h3>
-        <p class="project-description">
-          Built an interactive educational tool to visualize Kyber's post-quantum key generation process, combining a research phase in SAC,ISRO that analyzed NIST PQC finalist algorithms using Python and AES benchmarks, a production-ready responsive dashboard developed with React.js, and real-time cryptographic operations powered by a Kyber implementation.
-        </p>
-        <p class="project-tools">
-          <strong>Research:</strong> Python, AES, Jupyter Notebook<br>
-          <strong>Development:</strong> Bolt.AI<br>
-          <strong>Crypto:</strong> Kyber-512/768, WebCrypto API
-        </p>
-      </div>
-    </div>
-
-  </section>
-</article>
-
-    </div>
-
-  </main>
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+          </main>
+          <script src="./assets/js/script.js"></script>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
 
 </html>
