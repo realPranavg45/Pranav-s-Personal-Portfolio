@@ -513,15 +513,15 @@ ion-icon {
   margin-top: 10px;
 }
 
-.project-link {
+.project-links a {
   display: inline-block;
   margin-right: 12px;
-  color: var(--primary-color);
+  color: var(--orange-yellow-crayola);
   font-weight: 500;
   text-decoration: none;
 }
 
-.project-link:hover {
+.project-links a:hover {
   text-decoration: underline;
 }
 
@@ -645,7 +645,7 @@ ion-icon {
 .service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-3);
+  font-weight: var(--fw-300);
   line-height: 1.6;
   text-align: justify;
 }
@@ -1270,12 +1270,6 @@ ion-icon {
  */
 
 @media (max-width: 768px) {
-  html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-  }
-
   body, html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1283,14 +1277,14 @@ ion-icon {
   }
 
   *, *::before, *::after {
-    backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
-    filter: none !important;
+    backdrop-filter: none !important;
     -webkit-filter: none !important;
-    transform: none !important;
+    filter: none !important;
     -webkit-transform: none !important;
-    animation: none !important;
+    transform: none !important;
     -webkit-animation: none !important;
+    animation: none !important;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease !important;
   }
 
@@ -1533,12 +1527,13 @@ ion-icon {
 
 @media (max-width: 480px) {
   *, *::before, *::after {
-    backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
-    filter: none !important;
+    backdrop-filter: none !important;
     -webkit-filter: none !important;
-    transform: none !important;
+    filter: none !important;
     -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
     animation: none !important;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease !important;
   }
