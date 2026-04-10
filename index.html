@@ -24,19 +24,21 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Pranav Gaikwad">Pranav Gaikwad</h1>
+          <!-- FIX: Changed <h1> to <h2> — only one <h1> should exist per page; sidebar name is not the main page title -->
+          <h2 class="name" title="Pranav Gaikwad">Pranav Gaikwad</h2>
 
-          <p class="title"> Python Developer with a Focus on Data Analytics</p>
+          <p class="title">Python Developer with a Focus on Data Analytics</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <!-- FIX: Renamed class from info_more-btn (mixed _ and -) to info-more-btn (consistent kebab-case) -->
+        <button class="info-more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
       </div>
 
-      <div class="sidebar-info_more">
+      <!-- FIX: Renamed class from sidebar-info_more to sidebar-info-more (consistent kebab-case) -->
+      <div class="sidebar-info-more">
 
         <div class="separator"></div>
 
@@ -49,6 +51,7 @@
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
+              <!-- FIX: Replaced Cloudflare-obfuscated email with plain email — use your real address here -->
               <a href="mailto:pranavz.work@gmail.com" class="contact-link">pranavz.work@gmail.com</a>
             </div>
           </li>
@@ -71,7 +74,8 @@
 
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
-              <time datetime="1982-06-23">30 January, 2004</time>
+              <!-- FIX: datetime was "1982-06-23" but displayed text was "30 January, 2004" — corrected datetime to match -->
+              <time datetime="2004-01-30">30 January, 2004</time>
             </div>
           </li>
 
@@ -82,7 +86,6 @@
 
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
               <address>Vadodara, India</address>
             </div>
           </li>
@@ -110,7 +113,8 @@
       <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <!-- FIX: Removed extra space in class="navbar-link  active" -->
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
@@ -124,7 +128,8 @@
       </nav>
 
 
-      <article class="about  active" data-page="about">
+      <!-- FIX: Removed extra space in class="about  active" -->
+      <article class="about active" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
@@ -211,9 +216,7 @@
         </section>
       </article>
 
-      <!--
-                        - #RESUME
-                      -->
+      <!-- #RESUME -->
 
       <article class="resume" data-page="resume">
         <header>
@@ -232,7 +235,7 @@
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">GSFC University, Vadodara </h4>
+              <h4 class="h4 timeline-item-title">GSFC University, Vadodara</h4>
               <span>2021 — 2025</span>
               <p class="timeline-text">
                 B.Tech Computer Science & Engineering
@@ -255,8 +258,8 @@
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">IFS Trainee at Tntra </h4>
-              <span> September 2025- Present</span>
+              <h4 class="h4 timeline-item-title">IFS Trainee at Tntra</h4>
+              <span>September 2025 – Present</span>
               <p class="timeline-text">
                 IFS Cloud Trainee with foundational knowledge of LU APIs, OData integrations, and IFS Connect. Currently
                 learning to design validation logic, transactional flows, and integration configurations following IFS
@@ -275,8 +278,8 @@
               </p>
             </li>
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Project Trainee at SAC, ISRO </h4>
-              <span> January 2025- June 2025</span>
+              <h4 class="h4 timeline-item-title">Project Trainee at SAC, ISRO</h4>
+              <span>January 2025 – June 2025</span>
               <p class="timeline-text">
                 Designed and implemented a Post-Quantum Secure Communication System using
                 the Kyber algorithm for quantum-resistant key exchange in chat and file transfer and
@@ -286,19 +289,15 @@
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">VAPT Intern at Sannibh Technologies</h4>
-
-              <span>December 2024-January 2025</span>
-
+              <span>December 2024 – January 2025</span>
               <p class="timeline-text">
-                Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web apps by utilized Burp Suite,
+                Conducted Vulnerability Assessment and Penetration Testing (VAPT) on web apps by utilizing Burp Suite,
                 Nmap and Wireshark to identify and mitigate threats.
               </p>
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">AI/ML Intern at ONGC</h4>
-
               <span>June 2024 — July 2024</span>
-
               <p class="timeline-text">
                 Designed and deployed a conversational chatbot using NLTK, scikit-learn, and NLP techniques and
                 integrated chatbot into existing internal portals using Flask and PHP, improving
@@ -307,7 +306,7 @@
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Intern at Arth Technologies</h4>
-              <span>January 2023 - March 2023</span> <!-- Adjust dates as needed -->
+              <span>January 2023 – March 2023</span>
               <p class="timeline-text">
                 Developed a full-featured Music Player application using Android Studio, implementing audio playback,
                 playlist management, and user interface components. Gained hands-on experience with Android SDK,
@@ -317,7 +316,7 @@
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Intern at Vedity Software</h4>
-              <span>August 2022 - September 2022</span> <!-- Adjust dates as needed -->
+              <span>August 2022 – September 2022</span>
               <p class="timeline-text">
                 The internship focused on designing and developing a dynamic website using HTML, CSS, Bootstrap, PHP,
                 and JavaScript. It provided hands-on experience in frontend and backend development, enhancing my
@@ -348,7 +347,7 @@
 
             <div class="certification-card">
               <h4 class="cert-title">Ethical Hacker Certification</h4>
-              <p class="cert-provider"> Cisco Networking Academy</p>
+              <p class="cert-provider">Cisco Networking Academy</p>
             </div>
 
             <div class="certification-card">
@@ -360,7 +359,6 @@
               <h4 class="cert-title">Privacy And Security In Online Social Media</h4>
               <p class="cert-provider">NPTEL</p>
             </div>
-
           </div>
         </section>
 
@@ -398,21 +396,20 @@
 
       </article>
 
-      <!-- #projects -->
+      <!-- #PROJECTS -->
       <article class="projects" data-page="projects">
 
         <header>
           <h2 class="h2 article-title">Projects</h2>
         </header>
 
-        <section class="projects">
+        <!-- FIX: Renamed section class from "projects" to "projects-section" to avoid duplicate class name with parent <article class="projects"> -->
+        <section class="projects-section">
 
           <div class="project-list">
 
-
             <div class="project-card">
               <h3 class="project-title">Smart Business Analytics Platform | Full Stack Data Project</h3>
-
               <p class="project-description">
                 Developed a Smart Business Analytics Platform to manage business operations and generate real-time
                 insights.
@@ -422,12 +419,10 @@
                 inventory insights,
                 and visualized them through an interactive dashboard for data-driven decision making.
               </p>
-
               <p class="project-tools">
                 <strong>Tools:</strong> Python, FastAPI, PostgreSQL, SQLAlchemy, Pandas, NumPy, Streamlit, Power BI,
                 Postman
               </p>
-
               <p class="project-links">
                 <a href="https://github.com/realPranavg45/BusinessDashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
               </p>
@@ -463,7 +458,6 @@
               </p>
             </div>
 
-
             <div class="project-card">
               <h3 class="project-title">Post-Quantum Secure Communication System</h3>
               <p class="project-description">
@@ -493,7 +487,7 @@
               <h3 class="project-title">Kyber Key Generation Visualizer</h3>
               <p class="project-description">
                 Built an interactive educational tool to visualize Kyber's post-quantum key generation process,
-                combining a research phase in SAC,ISRO that analyzed NIST PQC finalist algorithms using Python and AES
+                combining a research phase in SAC, ISRO that analyzed NIST PQC finalist algorithms using Python and AES
                 benchmarks, a production-ready responsive dashboard developed with React.js, and real-time cryptographic
                 operations powered by a Kyber implementation.
               </p>
@@ -529,7 +523,6 @@
               </p>
               <p class="project-tools"><strong>Tools and Technologies:</strong><br>Python, Flask, Google APIs, AI/NLP
                 Models</p>
-
             </div>
 
             <div class="project-card">
@@ -606,7 +599,6 @@
                 Modeling, Trend Analysis, Visualization</p>
             </div>
 
-
           </div>
 
         </section>
@@ -617,7 +609,6 @@
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
